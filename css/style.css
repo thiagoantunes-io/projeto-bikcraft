@@ -84,6 +84,7 @@ a {
 
     .header-menu a::after {
         display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -94,7 +95,5 @@ a {
         padding: 8px 12px;
         font-size: 14px;
     }
-
-
 }
 
