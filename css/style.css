@@ -8,6 +8,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 600px;
 }
 
 img {
@@ -22,6 +23,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 .header-bg {
     background-color: #000000;
@@ -35,7 +37,7 @@ a {
     align-items: center;
     padding: 20px;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .header-menu {
@@ -67,6 +69,74 @@ a {
 .header-menu a:hover::after {
     width: 100%;
 }
+
+.introducao-bg {
+    background-color: #000000;
+    color: #ffffff;
+    box-shadow: inset 0 -120px #ffffff;
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.introducao-conteudo {
+    align-self: end;
+    padding-bottom: 200px;
+    
+}
+
+.introducao-imagem {
+
+}
+
+.introducao img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+
+}
+
+.introducao h1 {
+    margin-bottom: 32px;
+    font-size: 64px;
+    line-height: 1.125;
+}
+
+.introducao h1 span {
+    color: #FFBB00;
+}
+
+.introducao p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #b2b2b2;
+}
+
+.introducao a {
+    padding: 16px 32px;
+    display: inline-block;
+    background-image: linear-gradient(#ffbf00, #f2a50c);
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    color: #332200;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;   
+}
+
+.introducao a:hover {
+    background-image: linear-gradient(#ffb60d, #e59317);
+}
+
+
 
 @media (max-width: 800px) {
     .header-menu {
