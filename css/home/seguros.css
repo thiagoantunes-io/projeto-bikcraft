@@ -1,0 +1,75 @@
+.seguros-bg {
+    background-color: var(--cor-11);
+    padding-top: 60px;
+    padding-bottom: 120px;
+    
+}
+
+.seguros-bg > h2 {
+    margin-bottom: 120px;
+}
+
+.seguros-conteudo {
+    margin: auto;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.seguros-item {
+    background-color: var(--cor-12);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:  start;
+
+    padding: 40px;
+}
+
+.seguros-item h3 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.seguros-item ul {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.seguros-item li {
+    margin-bottom: 20px;
+
+}
+
+.seguros-item li::before {
+    content: url("/img/icones/lista.svg");
+    margin-right: 10px;
+}
+
+.seguros-item a {
+    margin-left: 20px;
+    place-self: start;
+}
+
+.seguros-item-valor {
+    text-align: right;
+}
+
+
+@media (max-width: 1100px) {
+
+    .seguros-bg > h2 {
+        margin-bottom: 60px;
+    }
+    .seguros-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .seguros-item-valor {
+        text-align: center;
+    }  
+}
+
+
+
+

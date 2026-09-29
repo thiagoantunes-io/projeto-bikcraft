@@ -59,9 +59,9 @@
         margin: auto; /* justify-self: center; */
     }
 
-    /* .depoimento-conteudo p {
+    .depoimento-conteudo p {
         font-size: 1.5rem;
-    } */
+    }
 
     .depoimento p::before{
         left: -40px;
