@@ -38,11 +38,18 @@
 
 .seguros-item li {
     margin-bottom: 20px;
-
+    display: flex;
+    align-items:center
 }
 
 .seguros-item li::before {
-    content: url("/img/icones/lista.svg");
+    content: "";
+    display: inline-block;
+    background-image: url('/img/icones/lista.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
     margin-right: 10px;
 }
 
@@ -61,9 +68,9 @@
 
     .seguros-conteudo {
         grid-template-columns: 1fr;
-        /* align-items: start; */
-        
+        /* align-items: start; */  
     }
+    
     .seguros-item-detalhe {
         grid-row: 1/3;
     }
