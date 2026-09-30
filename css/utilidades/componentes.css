@@ -10,7 +10,7 @@
 .botao {
     padding: 16px 32px;
     display: inline-block;
-    background-image: linear-gradient(#ffbf00, #f2a50c);
+    background: linear-gradient(#ffbf00, #f2a50c);
     border-radius: 4px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
     color: var(--cor-p5);
@@ -20,33 +20,24 @@
     line-height: 1.33;
     font-family: 'Poppins';
     font-weight: 600; */
+    max-width: max-content; /*significa que todo botão terá no máximo o tamanho do conteúdo dele */
 }
 
-.botao-2 {
-    padding: 16px 32px;
-    display: inline-block;
-    background-color: var(--cor-10);
-    border-radius: 4px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-    color: var(--cor-4);
-    text-transform: uppercase;
-    font: 600 1.125rem/1.35 'Poppins', sans-serif;
-    /* font-size: 18px;
-    line-height: 1.33;
-    font-family: 'Poppins';
-    font-weight: 600; */
+.botao.secundario { /* ou seja, quando tiver um elemento com a classe botão e com a classe secundario, serão aplicadas as  declarações abaixo*/
+    background: var(--cor-10);
+    color: var(--cor-2);
 }
 
 .botao:hover {
     background-image: linear-gradient(#ffb60d, #e59317);
 }
 
-.botao-2:hover {
-    background-color: var(--cor-9);
+.botao.secundario:hover {
+    background: var(--cor-9);
 }
 
 @media (max-width: 600px){
-    .botao, .botao-2 {
+    .botao {
         padding: 12px 16px;
         font-size: 1rem; /*16px*/
     }
