@@ -40,6 +40,22 @@
     content: counter(item) "." counter(subitem) " ";
 }
 
+@media (max-width: 800px) {
+    .termos-lista {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
 
+@media (max-width: 600px) {
+    .termos-lista > li {
+        font-size: 1.125rem;
+        line-height: 1.35;
+    }
+    .termos-lista ol {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
 
 
