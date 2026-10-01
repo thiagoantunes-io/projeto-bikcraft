@@ -22,7 +22,8 @@
     color: var(--cor-p1);
 }
 
-.footer-contato li:nth-child(2)::after, .footer-contato li:nth-child(4)::after{
+.footer-contato li:nth-child(even)::after{
+/* .footer-contato li:nth-child(2)::after, .footer-contato li:nth-child(4)::after{ */
     content: "";
     display: block;
     background-color: var(--cor-11);
