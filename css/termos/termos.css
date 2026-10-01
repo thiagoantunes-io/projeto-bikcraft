@@ -1,0 +1,45 @@
+.header-secundario {
+    background-color: var(--cor-12);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.header-secundario > span {
+    display: block;
+}
+
+.termos-lista {
+    max-width: 760px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    counter-reset: item;
+}
+
+.termos-lista > li {
+    counter-increment: item;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.termos-lista > li::before {
+    content: counter(item) ". ";
+}
+
+.termos-lista ol {
+    counter-reset: subitem;
+}
+
+.termos-lista ol li {
+    counter-increment: subitem;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.termos-lista ol li::before {
+    content: counter(item) "." counter(subitem) " ";
+}
+
+
+
+
