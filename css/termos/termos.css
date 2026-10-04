@@ -1,8 +1,11 @@
 
 .termos {
-    /* max-width: 750px; */
-    margin-top: 80px;
+    max-width: 750px;
+    margin: 80px auto;
+    /* margin-top: 80px;
     margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto; */
     counter-reset: item;
 }
 
