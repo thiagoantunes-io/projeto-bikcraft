@@ -1,5 +1,5 @@
 .bicicleta-bg {
-    background-color: aqua;
+    /* background-color: aqua; */
     margin-top: 60px;
     margin-bottom: 60px;
 
@@ -26,15 +26,43 @@
     display: block;
 }
 
-.bicicleta-conteudo {
-    padding-top: 20px;
-    display: grid;
-    row-gap: 20px;
-    align-content: start;
+.bicicleta-conteudo h2 {
+    margin-bottom: 32px;
+    
 }
 
+.bicicleta-conteudo p {
+    margin-bottom: 32px;
+    max-width: 45ch;
+    font-weight: normal;
 
-.bicicleta-conteudo li {
+}
+
+.bicicleta-conteudo h2::before {
+    content: "";
+    background-color: var(--cor-p1);
+    display: block; /*pois quero que fique na mesma linha*/
+    height: 8px;
+    width: 12px;
+    margin-bottom: 10px;
+}
+
+.bicileta-detalhes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bicileta-detalhes a {
+    align-self: flex-end;
+    align-items: flex-start;    
+}
+
+.bicileta-detalhes a > img {
+    margin-left: 10px;
+    width: 18px;
+} 
+
+.bicileta-detalhes li {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
@@ -42,5 +70,5 @@
 
 .bicicleta-conteudo img {
     display: inline-block;
-
+    width: 24px;
 }
