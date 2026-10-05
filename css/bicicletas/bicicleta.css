@@ -1,0 +1,46 @@
+.bicicleta-bg {
+    background-color: aqua;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+.bicicleta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-shadow: inset 180px 0px white ;
+    
+}
+
+.bicicleta-imagem {
+    max-height: 380px;
+}
+
+.bicicleta-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bicicleta-conteudo {
+    padding-top: 20px;
+    display: grid;
+    row-gap: 20px;
+    align-content: start;
+}
+
+
+.bicicleta-conteudo li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.bicicleta-conteudo img {
+    display: inline-block;
+
+}
