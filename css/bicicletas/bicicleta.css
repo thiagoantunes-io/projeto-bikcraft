@@ -6,15 +6,11 @@ main {
     margin-bottom: 60px;
 }
 
-.bicicleta-bg-1 {
-    background-color:var(--cor-0);
-    /* margin-bottom: 60px; */
-    padding-left: 0px;
-    padding-right: 0px;
+main > ul > li:nth-child(even) {
+    background-color:var(--cor-11);
 }
 
-.bicicleta-bg-2 {
-    background-color:var(--cor-11);
+.bicicleta-bg {
     /* margin-bottom: 60px; */
     padding-left: 0px;
     padding-right: 0px;
@@ -43,14 +39,24 @@ main {
 }
 
 .bicicleta01 {
-    background-image: url(../../img/bicicleta/nimbus1.jpg);
+    background-image: url('../../img/bicicleta/nimbus1.jpg');
 }
 
-.bicicleta-conteudo {
-    /* width: 100%;
+.bicicleta02 {
+    background-image: url('../../img/bicicleta/nimbus2.jpg');
+}
+
+.bicicleta03 {
+    background-image: url('../../img/bicicleta/nimbus3.jpg');
+}
+/* .bicicleta-imagem {
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block; */
+    display: block;
+} */
+
+.bicicleta-conteudo {
     position: relative;
 }
 
@@ -59,10 +65,10 @@ main {
     position: absolute;
     color: var(--cor-0);
     background-color: var(--cor-12);
-    padding: 6px 14px ;
+    padding: 10px 20px 10px 10px ;
     border-radius: 4px;
     top: 20px;
-    left: -135px; 
+    left: -137px; 
 
 }
 
