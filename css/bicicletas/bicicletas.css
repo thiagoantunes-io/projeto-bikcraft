@@ -10,11 +10,11 @@ main > ul > li:nth-child(even) {
     background-color:var(--cor-11);
 }
 
-.bicicleta-bg {
-    /* margin-bottom: 60px; */
+/* .bicicleta-bg {
+    margin-bottom: 60px;
     padding-left: 0px;
     padding-right: 0px;
-}
+} */
 
 
 .bicicleta {
@@ -61,7 +61,6 @@ main > ul > li:nth-child(even) {
 .bicicleta-imagem > span {
     display: block;
     position: absolute;
-    color: var(--cor-0);
     background-color: var(--cor-12);
     padding: 10px 20px 10px 10px ;
     border-radius: 4px;

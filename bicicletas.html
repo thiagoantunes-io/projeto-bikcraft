@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,900;1,18..144,900&family=Poppins:wght@400;600&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="bicicletas">
     <header class="header-bg"> <!-- header-bg signifca header background -->
         <div class="header container">
             <a href="./index.html">
@@ -31,73 +31,27 @@
     <main>
         <div class="titulo-bg">
             <div class="titulo container">
-                <p class="font-2-l-b cor-5">escolha a melhor para você</p>
+                <p class="font-2-l-b cor-5">Escolha a melhor para você</p>
                 <h1 class="font-1-xxl cor-0">nossas bicicletas<span class="cor-p1">.</span></h1>
             </div>
         </div>
         
         <ul>
-            <li class="bicicleta-bg container">
+            <li class="bicicleta-bg ">
                 <div class="bicicleta container">
                     <div class="bicicleta-imagem">
                         <img src="./img/bicicletas/nimbus.jpg" alt="Bicicleta Nimbus Stark" title="Bicicleta Nimbus Stark">
-                        <span class="font-2-m">R$ 4999</span>
+                        <span class="font-2-m cor-0">R$ 4999</span>
                     </div>
                     <div class="bicicleta-conteudo">
                         <h2 class="font-1-xl cor-11">Nimbus Stark</h2>
-                        
-                        <p class="font-2-m cor-8">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+                        <p class="font-2-s cor-8">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
                         <div class="bicileta-detalhes">
-                            <ul class="cor-8">
-                                <li>
-                                    <img src="./img/icones/eletrica.svg" alt="">
-                                    <h3 class="font-1-m">Motor Elétrico</h3>
-                                </li>
-                                <li>
-                                    <img src="./img/icones/carbono.svg" alt="">
-                                    <h3 class="font-1-m">Fibra de Carbono</h3>
-                                </li>
-                                <li>
-                                    <img src="./img/icones/velocidade.svg" alt="">
-                                    <h3 class="font-1-m">40 km/h</h3>
-                                </li>
-                                <li>
-                                    <img src="./img/icones/rastreador.svg" alt="">
-                                    <h3 class="font-1-m">Rastreador</h3>
-                                </li>
-                            </ul>
-                            <a class="botao" href="#">Mais Sobre<img src="./img/icones/seta.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="bicicleta-bg container">
-                <div class="bicicleta container">
-                    <div class="bicicleta-imagem">
-                        <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Nimbus Stark" title="Bicicleta Magic Might">
-                        <span class="font-2-m">R$ 2499</span>
-                    </div>
-                    <div class="bicicleta-conteudo">
-                        <h2 class="font-1-xl cor-0">Magic Might</h2>
-                        <p class="font-2-m cor-5">A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
-                        <div class="bicileta-detalhes">
-                            <ul class="cor-5">
-                                <li>
-                                    <img src="./img/icones/eletrica.svg" alt="">
-                                    <h3 class="font-1-m">Motor Elétrico</h3>
-                                </li>
-                                <li>
-                                    <img src="./img/icones/carbono.svg" alt="">
-                                    <h3 class="font-1-m">Fibra de Carbono</h3>
-                                </li>
-                                <li>
-                                    <img src="./img/icones/velocidade.svg" alt="">
-                                    <h3 class="font-1-m">40 km/h</h3>
-                                </li>
-                                <li>
-                                    <img src="./img/icones/rastreador.svg" alt="">
-                                    <h3 class="font-1-m">Rastreador</h3>
-                                </li>
+                            <ul class="font-1-m cor-8">
+                                <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
+                                <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+                                <li><img src="./img/icones/velocidade.svg" alt="">50 km/h</li>
+                                <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
                             </ul>
                             <a class="botao" href="#">Mais Sobre<img src="./img/icones/seta.svg" alt=""></a>
                         </div>
@@ -105,33 +59,43 @@
                 </div>
             </li>
 
-            <li class="bicicleta-bg container">
+            <li class="bicicleta-bg">
+                <div class="bicicleta container">
+                    <div class="bicicleta-imagem">
+                        <img src="./img/bicicletas/magic.jpg" alt="Bicicleta Nimbus Stark" title="Bicicleta Magic Might">
+                        <span class="font-2-m cor-0">R$ 2499</span>
+                    </div>
+                    <div class="bicicleta-conteudo">
+                        <h2 class="font-1-xl cor-0">Magic Might</h2>
+                        <p class="font-2-s cor-5">A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+                        <div class="bicileta-detalhes">
+                            <ul class="font-1-m cor-5">
+                                <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
+                                <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+                                <li><img src="./img/icones/velocidade.svg" alt="">40 km/h</li>
+                                <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+                            </ul>
+                            <a class="botao" href="#">Mais Sobre<img src="./img/icones/seta.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="bicicleta-bg">
                 <div class="bicicleta container">
                     <div class="bicicleta-imagem">
                         <img src="./img/bicicletas/nebula.jpg" alt="Bicicleta Nimbus Stark" title="Bicicleta Nebula Cosmic">
-                        <span class="font-2-m">R$ 3999</span>
+                        <span class="font-2-m cor-0">R$ 3999</span>
                     </div>
                     <div class="bicicleta-conteudo">
                         <h2 class="font-1-xl cor-11">Nebula Cosmic</h2>
-                        <p class="font-2-m cor-8">A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+                        <p class="font-2-s cor-8">A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
                         <div class="bicileta-detalhes">
-                            <ul class="cor-8">
-                                <li>
-                                    <img src="./img/icones/eletrica.svg" alt="">
-                                    <h3 class="font-1-m">Motor Elétrico</h3>
-                                </li>
-                                <li>
-                                    <img src="./img/icones/carbono.svg" alt="">
-                                    <h3 class="font-1-m">Fibra de Carbono</h3>
-                                </li>
-                                <li>
-                                    <img src="./img/icones/velocidade.svg" alt="">
-                                    <h3 class="font-1-m">40 km/h</h3>
-                                </li>
-                                <li>
-                                    <img src="./img/icones/rastreador.svg" alt="">
-                                    <h3 class="font-1-m">Rastreador</h3>
-                                </li>
+                            <ul class="font-1-m cor-8">
+                                <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
+                                <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
+                                <li><img src="./img/icones/velocidade.svg" alt="">50 km/h</li>
+                                <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
                             </ul>
                             <a class="botao" href="#">Mais Sobre<img src="./img/icones/seta.svg" alt=""></a>
                         </div>
