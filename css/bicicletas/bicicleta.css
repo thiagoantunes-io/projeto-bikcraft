@@ -1,9 +1,25 @@
-.bicicleta-bg {
-    /* background-color: aqua; */
-    margin-top: 60px;
+.titulo-bg {
     margin-bottom: 60px;
-
 }
+
+main {
+    margin-bottom: 60px;
+}
+
+.bicicleta-bg-1 {
+    background-color:var(--cor-0);
+    /* margin-bottom: 60px; */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.bicicleta-bg-2 {
+    background-color:var(--cor-11);
+    /* margin-bottom: 60px; */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 .bicicleta {
     display: grid;
@@ -11,31 +27,58 @@
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
-    box-shadow: inset 180px 0px white ;
+    align-content: start;
+
+    box-shadow: inset 180px 0px white;
     
 }
 
-.bicicleta-imagem {
-    max-height: 380px;
+#bicicleta-imagem {
+    /* max-height: 380px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+
 }
 
-.bicicleta-imagem img {
-    width: 100%;
+.bicicleta01 {
+    background-image: url(../../img/bicicleta/nimbus1.jpg);
+}
+
+.bicicleta-conteudo {
+    /* width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    display: block; */
+    position: relative;
+}
+
+.bicicleta-conteudo > span {
+    display: inline-block;
+    position: absolute;
+    color: var(--cor-0);
+    background-color: var(--cor-12);
+    padding: 6px 14px ;
+    border-radius: 4px;
+    top: 20px;
+    left: -135px; 
+
 }
 
 .bicicleta-conteudo h2 {
     margin-bottom: 32px;
-    
 }
 
 .bicicleta-conteudo p {
     margin-bottom: 32px;
     max-width: 45ch;
     font-weight: normal;
+}
 
+.bicicleta-conteudo img {
+    display: inline-block;
+    max-width: 24px;
 }
 
 .bicicleta-conteudo h2::before {
@@ -48,13 +91,12 @@
 }
 
 .bicileta-detalhes {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
 }
 
 .bicileta-detalhes a {
-    align-self: flex-end;
-    align-items: flex-start;    
+    place-self: end;
 }
 
 .bicileta-detalhes a > img {
@@ -66,9 +108,6 @@
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+    align-items: center;
 }
 
-.bicicleta-conteudo img {
-    display: inline-block;
-    width: 24px;
-}
