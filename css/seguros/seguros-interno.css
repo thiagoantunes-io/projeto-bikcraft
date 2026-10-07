@@ -11,5 +11,31 @@
 }
 
 .vantagens {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.vantagens img {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.perguntas h1 {
     margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 800px) {
+    .vantagens {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .vantagens {
+        grid-template-columns: 1fr;
+    }
 }
