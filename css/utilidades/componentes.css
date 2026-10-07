@@ -28,6 +28,26 @@
     color: var(--cor-2);
 }
 
+.botao.seta {
+    display: flex;
+    align-items: center;
+}
+
+.botao.seta::after {
+    content: "";
+    display: inline-block;
+    background-image: url('../../img/icones/seta.svg');
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 10px;
+    margin-left: 12px;
+    transition: transform 0.2s ease;
+}
+
+.botao.seta:hover::after {
+    transform: translateX(5px);
+}
+
 .botao:hover {
     background-image: linear-gradient(#ffb60d, #e59317);
 }

@@ -6,16 +6,10 @@ main {
     margin-bottom: 60px;
 }
 
-main > ul > li:nth-child(even) {
-    background-color:var(--cor-11);
+.bicicleta-bg {
+   background: linear-gradient(to right, var(--cor-0) 20%, var(--cor-11) 0%);
+    /* background-image: linear-gradient(to right, var(--cor-0) 30%, var(--cor-12) 30%); */
 }
-
-/* .bicicleta-bg {
-    margin-bottom: 60px;
-    padding-left: 0px;
-    padding-right: 0px;
-} */
-
 
 .bicicleta {
     display: grid;
@@ -24,29 +18,22 @@ main > ul > li:nth-child(even) {
     padding-top: 60px;
     padding-bottom: 60px;
     align-content: start;
-
-    box-shadow: inset 180px 0px white;
-    
 }
 
-/* #bicicleta-imagem {
-    max-height: 380px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
+.bicicleta-imagem {
+    position: relative;
 }
 
-.bicicleta01 {
-    background-image: url('../../img/bicicleta/nimbus1.jpg');
+.bicicleta-imagem span {
+    background-color: var(--cor-12);
+    display: block; /* ou display: inline-block; */
+    position: absolute;
+    padding: 8px 16px 8px 8px;
+    border-radius: 4px 0 0 4px;
+    top: 20px;
+    right: 0px; 
 }
-.bicicleta02 {
-    background-image: url('../../img/bicicleta/nimbus2.jpg');
-}
-.bicicleta03 {
-    background-image: url('../../img/bicicleta/nimbus3.jpg');
-} */
- 
+
 .bicicleta-imagem img {
     max-width: 100%;
     height: 100%;
@@ -54,22 +41,17 @@ main > ul > li:nth-child(even) {
     display: block;
 }
 
-.bicicleta-imagem {
-    position: relative;
-}
-
-.bicicleta-imagem > span {
-    display: block;
-    position: absolute;
-    background-color: var(--cor-12);
-    padding: 10px 20px 10px 10px ;
-    border-radius: 4px;
-    top: 20px;
-    right: 0px; 
-}
-
 .bicicleta-conteudo h2 {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
+}
+
+.bicicleta-conteudo h2::before {
+    content: "";
+    background-color: var(--cor-p1);
+    display: block; /*pois quero que fique na mesma linha*/
+    width: 12px;
+    height: 8px;
+    margin-bottom: 8px;
 }
 
 .bicicleta-conteudo p {
@@ -83,40 +65,39 @@ main > ul > li:nth-child(even) {
     max-width: 24px;
 }
 
-.bicicleta-conteudo h2::before {
-    content: "";
-    background-color: var(--cor-p1);
-    display: block; /*pois quero que fique na mesma linha*/
-    height: 8px;
-    width: 12px;
-    margin-bottom: 10px;
-}
-
-.bicileta-detalhes {
+.bicicleta-detalhes {
     display: grid;
     grid-template-columns: 1fr auto;
+
 }
 
-.bicileta-detalhes a {
+.bicicleta-detalhes a {
     place-self: end;
 }
 
-.bicileta-detalhes a > img {
-    margin-left: 10px;
-    width: 18px;
-} 
+.bicicleta-detalhes ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
 
-.bicileta-detalhes li {
+.bicicleta-detalhes li {
     display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 8px;
     align-items: center;
 }
 
-@media (max-width: 800px) {
+/* .bicicleta-detalhes li+li {
+    margin-top: 16px;
+} */
 
+@media (max-width: 800px) {
     .titulo-bg {
         margin-bottom: 0px;
+    }
+
+    .bicicleta-bg {
+    background: var(--cor-11);
     }
 
     main {
@@ -125,11 +106,39 @@ main > ul > li:nth-child(even) {
 
     .bicicleta {
         grid-template-columns: 1fr;
-        box-shadow: inset 0px 0px white;  
+        gap: 20px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .bicicleta-conteudo p {
-        max-width: 100vw;
+        max-width: 100%;
     }
 }
+
+@media (max-width: 600px) {
+    .bicicleta-detalhes {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .bicicleta-detalhes ul {
+        font-size: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .bicicleta-detalhes a {
+            place-self: start;
+        }
+ }
+
+ @media (max-width: 400px) {
+    .bicicleta-detalhes ul {
+        grid-template-columns: 1fr;
+    }
+
+    .bicicleta-detalhes a {
+        place-self: end center;
+    }
+ }
+
 
