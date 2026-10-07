@@ -1,0 +1,15 @@
+.seguros-bg-interno {
+    background-color: var(--cor-11);
+    padding-top: 0px;
+    padding-bottom: 60px;
+}
+
+.vantagens-bg {
+    background-color: var(--cor-12);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.vantagens {
+    margin-top: 60px;
+}

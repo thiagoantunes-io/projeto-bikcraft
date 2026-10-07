@@ -1,11 +1,3 @@
-.titulo-bg {
-    margin-bottom: 60px;
-}
-
-main {
-    margin-bottom: 60px;
-}
-
 .bicicleta-bg {
    background: linear-gradient(to right, var(--cor-0) 20%, var(--cor-11) 0%);
     /* background-image: linear-gradient(to right, var(--cor-0) 30%, var(--cor-12) 30%); */
@@ -92,16 +84,8 @@ main {
 } */
 
 @media (max-width: 800px) {
-    .titulo-bg {
-        margin-bottom: 0px;
-    }
-
     .bicicleta-bg {
     background: var(--cor-11);
-    }
-
-    main {
-        margin-bottom: 0px;
     }
 
     .bicicleta {

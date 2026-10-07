@@ -22,6 +22,7 @@
 
 /* Seguros */
 @import "./seguros/seguros.css";
+@import "./seguros/seguros-interno.css";
 
 /* Termos */
 @import "./termos/termos.css";
