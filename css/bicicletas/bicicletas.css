@@ -40,7 +40,7 @@
 .bicicleta-conteudo h2::before {
     content: "";
     background-color: var(--cor-p1);
-    display: block; /*pois quero que fique na mesma linha*/
+    display: block; /*pois quero que fique na linha de cima*/
     width: 12px;
     height: 8px;
     margin-bottom: 8px;
