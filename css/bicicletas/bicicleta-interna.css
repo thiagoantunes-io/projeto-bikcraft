@@ -1,0 +1,80 @@
+.titulo-interno h1 {
+    margin-bottom: 60px;
+}
+
+.bicicleta-interna {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.bicicletas-imagens {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-content: start;
+}
+
+.imagem-01 {
+    grid-column: 1/-1;
+}
+
+.bicicletas-conteudo {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+    align-content: start;
+    justify-content: start;
+}
+
+.bicicletas-conteudo > p {
+    grid-column: 1/-1;   
+}
+
+
+.bicicletas-conteudo-extras {
+    display: grid;
+    gap: 16px;
+}
+
+.bicicletas-conteudo-extras span {
+    /* display: block; */
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    justify-items: start;
+}
+
+.bicicletas-informacoes, .bicicletas-ficha {
+    grid-column: 1/-1;
+}
+
+.bicicletas-informacoes > h2, .bicicletas-ficha > h2 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.bicicletas-informacoes-conteudo {
+    background-color: var(--cor-12);
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.bicicletas-informacoes h3 {
+    margin-bottom: 16px;
+}
+
+.bicicletas-ficha-conteudo {
+    background-color: var(--cor-12);
+    padding: 32px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.bicicletas-ficha-conteudo span {
+    text-align: end;
+}
+
