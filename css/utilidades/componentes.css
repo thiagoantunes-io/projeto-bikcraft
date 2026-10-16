@@ -117,3 +117,10 @@
     }
 }
 
+.bicicletas-lista.interna {
+    padding-bottom: 60px;
+}
+
+.bicicletas-lista.interna ul {
+    padding: 0px 0px 20px 0px;
+}
