@@ -1,12 +1,12 @@
-.titulo-interno h1 {
+/* .titulo-interno h1 {
     margin-bottom: 60px;
-}
+} */
 
-.bicicleta-interna {
+/* .bicicleta-interna {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-}
+} */
 
 .bicicletas-imagens {
     display: grid;
