@@ -7,6 +7,10 @@
     padding-bottom: 60px;
 }
 
+#bicicleta .titulo p {
+    text-transform: uppercase;
+}
+
 /* .bicicletas-imagens {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -77,17 +81,13 @@
     grid-column: 1/-1;
 }
 
-.bicicletas-informacoes-conteudo, .bicicletas-ficha-conteudo {
+.bicicletas-informacoes-conteudo {
     background-color: var(--cor-12);
     border-radius: 4px;
     padding: 32px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-}
-
-.bicicletas-ficha-conteudo {
-    gap: 16px;
 }
 
 .bicicletas-informacoes img {
@@ -99,10 +99,43 @@
     margin-bottom: 8px;
 }
 
-.bicicletas-ficha-conteudo span {
-    text-align: end;
+.bicicletas-ficha-conteudo {
+    background-color: var(--cor-12);
+    border-radius: 4px;
+    padding: 32px;
 }
 
+.bicicletas-ficha-conteudo li {
+    padding: 4px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--cor-11);
+}
+
+.bicicletas-ficha-conteudo li:last-child {
+    border-bottom: none;
+}
+
+@media (max-width: 800px) {
+    .bicicletas {
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bicicletas-imagens {
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    .bicicletas-informacoes-conteudo {
+        grid-template-columns: 1fr;
+    }
+    .bicicletas-comprar {
+        grid-template-columns: 1fr;
+    }
+}
 
 .seguros-interno-bg {
     background-color: var(--cor-11);
@@ -141,13 +174,6 @@
     margin-bottom: 20px;
 }
 
-@media (max-width: 870px) {
-    .bicicletas-conteudo > a {
-        padding: 12px 16px;
-        font-size: 1rem;
-    }
-}
-
 @media (max-width: 1300px) {
     .seguros-interno-bg {
         box-shadow: inset 0px 60px var(--cor-0), inset 0px -60px var(--cor-12);
@@ -171,32 +197,12 @@
     }
 }
 
-@media (max-width: 800px) {
-    .bicicletas {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-}
-
 @media (max-width: 500px) {
-    .bicicletas-informacoes-conteudo {
-        grid-template-columns: 1fr;
-    }
     .seguros-interno-bg {
         box-shadow: none;
     }
     
     .seguros-imagem {
         display: none;
-    }
-}
-
-@media (max-width: 400px) {
-    .bicicletas-conteudo > a {
-        grid-column: 1/-1;
-        justify-self: center;
-
     }
 }
