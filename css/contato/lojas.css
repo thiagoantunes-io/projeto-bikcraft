@@ -1,9 +1,86 @@
 .lojas {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     background-color: var(--cor-1);
 }
 
 .lojas h1 {
     margin-bottom: 60px;
+}
+
+.lojas-locais {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.lojas-informacoes {
+    background-color: var(--cor-0);
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.097);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+
+.lojas-detalhes {
+    padding: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+.lojas-detalhes h2 {
+    display: flex;
+    align-items: center;
+}
+
+.lojas-detalhes h2::before {
+    content: "";
+    background-color: var(--cor-p1);
+    display: inline-block; /*pois quero que fique na mesma linha*/
+    height: 8px;
+    width: 12px;
+    margin-right: 8px;
+    transition: width 0.2s ease;
+
+}
+
+.lojas-detalhes h2:hover::before {
+    width: 24px;
+}
+
+.lojas-dados {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+
+.lojas-dados ul {
+    margin-left: 22px;
+    border-left: 2px solid var(--cor-2);
+}
+
+.lojas-dados li {
+    padding-left: 10px;
+    
+}
+
+.lojas-dados li:first-child {
+    padding-bottom: 4px;
+}
+
+.lojas-dados a:hover {
+    color: var(--cor-p2);
+    transition: color 0.3s ease;
+}
+
+.lojas-horario {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lojas-horario img {
+    max-width: 16px;
 }
