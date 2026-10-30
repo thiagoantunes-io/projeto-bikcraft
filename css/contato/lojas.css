@@ -1,0 +1,9 @@
+.lojas {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--cor-1);
+}
+
+.lojas h1 {
+    margin-bottom: 60px;
+}
