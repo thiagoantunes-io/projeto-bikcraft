@@ -100,7 +100,8 @@
 
 @media (max-width: 650px) {
     .contato {
-        grid-template-columns:1fr;
+        margin-top: 40px;
+        grid-template-columns: 1fr;
     }
 
     /* .contato-formulario {
