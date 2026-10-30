@@ -1,5 +1,9 @@
+#contato body {
+    background-color: var(--cor-1);
+}
+
 #contato .titulo-bg {
-    box-shadow: inset 0px -250px var(--cor-0);
+    box-shadow: inset 0px -250px var(--cor-1);
 }
 
 .contato {
@@ -16,7 +20,8 @@
     padding: 40px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.097);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.097);
+    align-content: start;
 }
 
 .contato-informacoes a:hover {
@@ -47,5 +52,39 @@
     background-color: var(--cor-0);
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.097);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.097);
+    padding: 40px;
+}
+
+.contato-formulario > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.contato-formulario input, .contato-formulario textarea {
+    background-color: var(--cor-1);
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+
+} 
+
+.contato-formulario textarea {
+    height: 160px;
+}
+
+.contato-formulario .email, .contato-formulario .mensagem, .contato-formulario button {
+    grid-column: 1/-1;
+}
+.contato-formulario .email input, .contato-formulario .mensagem textarea {
+    width: 100%;
+}
+
+.contato-formulario ::placeholder {
+    color: var(--cor-6);
+}
+
+.contato-formulario button {
+    border: none;
 }

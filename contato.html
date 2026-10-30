@@ -64,12 +64,33 @@
                 </ul>
             </div>
             <div class="contato-formulario">
-
+                <form action="" method="post" class="font-1-s">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input class="font-2-s" type="text" name="nome" id="nome" required placeholder="Seu nome">
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input class="font-2-s" type="tel" name="telefone" id="telefone" required placeholder="(21) 99999-9999">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input class="font-2-s" type="email" name="email" id="email" required autocomplete="email" placeholder="contato@gmail.com">
+                    </div>
+                    <div class="mensagem">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="font-2-s" name="mensagem" id="mensagem" required placeholder="O que você precisa?"></textarea>
+                    </div>
+                    <button class="botao" type="submit">enviar mensagem</button>                  
+                </form>
             </div> 
         </div>
-
     </article>
-
+    <article class="lojas">
+        <div class="titulo container">
+            <h1 class="font-1-xxl cor-11">lojas locais<span class="cor-p1">.</span></h1>
+        </div>
+    </article>
 
 
     <footer class="footer-bg">
