@@ -24,6 +24,10 @@
     color: var(--cor-p1);
 }
 
+.contato-informacoes address > a {
+    display: block;
+}
+
 .contato-redes {
     display: flex;
     gap: 32px;
@@ -52,7 +56,7 @@
     padding: 40px;
 }
 
-.contato-formulario > form {
+/* .contato-formulario > form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
@@ -83,7 +87,7 @@
 
 .contato-formulario button {
     border: none;
-}
+} */
 
 
 @media (max-width: 950px) {
@@ -92,11 +96,11 @@
     }
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     .contato-formulario > form {
         grid-template-columns: 1fr;
     }
-}
+} */
 
 @media (max-width: 650px) {
     .contato {
@@ -104,7 +108,7 @@
         grid-template-columns: 1fr;
     }
 
-    /* .contato-formulario {
-       grid-row: 1;
-    } */
+    .contato-formulario {
+       /* grid-row: 1; */
+    }
 }

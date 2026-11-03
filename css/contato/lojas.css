@@ -21,6 +21,10 @@
     border-bottom-left-radius: 4px;
 }
 
+.lojas-imagem img {
+    border-radius: initial;
+}
+
 .lojas-detalhes {
     padding: 32px;
     display: grid;
