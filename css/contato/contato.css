@@ -1,3 +1,7 @@
+#contato {
+    background-color: var(--cor-1);
+}
+
 #contato .titulo-bg {
     box-shadow: inset 0px -300px var(--cor-1);
 }

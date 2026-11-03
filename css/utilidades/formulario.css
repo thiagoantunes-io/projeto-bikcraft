@@ -26,10 +26,6 @@
     color: var(--cor-6);
 }
 
-.form button {
-    border: none;
-}
-
 @media (max-width: 800px) {
     .form {
         grid-template-columns: 1fr;
