@@ -22,6 +22,7 @@
     font-weight: 600; */
     max-width: max-content; /*significa que todo botão terá no máximo o tamanho do conteúdo dele */
     border: none;
+    cursor: pointer;
 }
 
 .botao.secundario { /* ou seja, quando tiver um elemento com a classe botão e com a classe secundario, serão aplicadas as  declarações abaixo*/

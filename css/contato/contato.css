@@ -39,7 +39,6 @@
     background-position: 0px 2px;
 } */
 
-
 .contato-informacoes h2 {
     grid-column: 1 / -1;
     margin-bottom: 28px;
@@ -93,55 +92,9 @@
     border-bottom-right-radius: 4px; */
 }
 
-/* .contato-formulario > form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-}
-
-.contato-formulario input, .contato-formulario textarea {
-    background-color: var(--cor-1);
-    padding: 10px;
-    border-radius: 4px;
-    border: none;
-
-} 
-
-.contato-formulario textarea {
-    height: 160px;
-}
-
-.contato-formulario .email, .contato-formulario .mensagem, .contato-formulario button {
-    grid-column: 1/-1;
-}
-.contato-formulario .email input, .contato-formulario .mensagem textarea {
-    width: 100%;
-}
-
-.contato-formulario ::placeholder {
-    color: var(--cor-6);
-}
-
-.contato-formulario button {
-    border: none;
-} */
-
-
 @media (max-width: 950px) {
     .contato {
         grid-template-columns: auto 1fr;
-    }
-}
-
-@media (max-width: 800px) {
-    /* .contato-informacoes, .contato-formulario {
-        padding: 20px;
-    } */
-    .contato-informacoes h2 {
-        margin-bottom: 0px;
-    }
-    .contato-redes {
-        padding-top: 0px;
     }
 }
 
@@ -152,19 +105,17 @@
     }
 
     .contato-informacoes {
-
         border-radius: 4px 4px 0 0;
-        /* border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px; */
     } 
     
     .contato-formulario {
         border-radius: 0 0 4px 4px;
-        /* border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px; */
+    }
+
+    .contato-informacoes h2 {
+        margin-bottom: 0px;
+    }
+    .contato-redes {
+        padding-top: 0px;
     }
 }
