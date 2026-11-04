@@ -1,7 +1,11 @@
 .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
+    gap: 32px 16px;
+}
+
+.form label {
+    margin-bottom: 8px;
 }
 
 .form input, .form textarea {
