@@ -10,30 +10,33 @@
 .lojas-locais {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 40px;
 }
 
 .lojas-informacoes {
     background-color: var(--cor-0);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 4px;
 }
 
 .lojas-imagem img {
-    border-radius: initial;
+    border-radius: 4px 4px 0 0;
 }
 
 .lojas-detalhes {
     padding: 32px;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 16px;
 }
 
 .lojas-detalhes h2 {
     display: flex;
     align-items: center;
+}
+
+.lojas-detalhes h2, .lojas-detalhes p {
+    grid-column: 1/-1;
 }
 
 .lojas-detalhes h2::before {
@@ -50,23 +53,21 @@
     width: 24px;
 }
 
-.lojas-dados {
+/* .lojas-dados {
     display:flex;
     flex-wrap: wrap;
     gap: 40px;
-}
+} */
 
-.lojas-dados ul {
+.lojas-dados {
     margin-left: 22px;
     border-left: 2px solid var(--cor-2);
+    display: grid;
+    gap: 8px;
 }
 
 .lojas-dados li {
-    padding-left: 10px;  
-}
-
-.lojas-dados li:first-child {
-    padding-bottom: 4px;
+    padding-left: 12px; 
 }
 
 .lojas-dados a:hover {
@@ -74,14 +75,10 @@
     transition: color 0.3s ease;
 }
 
-.lojas-horario {
+.lojas-detalhes p {
     display: flex;
     align-items: center;
-    gap: 8px;
-}
-
-.lojas-horario img {
-    max-width: 16px;
+    gap: 4px;
 }
 
 @media (max-width: 800px) {
@@ -91,11 +88,16 @@
     }
 
     .lojas h1 {
-        margin-bottom: 40px;
+        margin-bottom: 32px;
     }
 
+    .lojas-detalhes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
     .lojas-locais {
         grid-template-columns: 1fr;
     }
-
 }
