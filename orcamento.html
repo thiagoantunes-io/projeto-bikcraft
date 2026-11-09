@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Orçamento">
+    <title>Orçamento | Bikcraft</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,900;1,18..144,900&family=Poppins:wght@400;600&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body id="orcamento">
+    <header class="header-bg"> <!-- header-bg signifca header background -->
+        <div class="header container">
+            <a href="./index.html">
+                <img src="./img/bikcraft.svg" alt="Bikcraft">
+            </a>
+            
+            <nav aria-label="primaria">  <!-- Navegação primaria do site -->
+                <ul class="header-menu font-1-m cor-0">
+                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="titulo-bg">
+            <div class="titulo container">
+                <p class="font-2-l-b cor-5">cotações no seu email</p>
+                <h1 class="font-1-xxl cor-0">solicite um orçamento<span class="cor-p1">.</span></h1>
+            </div>
+
+            <div class="orcamento container">
+                <section class="orcamento-informacoes">
+                </section>
+
+                <section aria-label="Formulário" class="orcamento-formulario">
+                    <form class="form" action="./contato.html" method="post">
+                        <h2 class="col-2">Dados pessoais</h2>
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" required placeholder="Seu nome">
+                        </div>
+                        <div>
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome" required placeholder="Seu sobrenome">
+                        </div>
+                        <div class="col-2">
+                            <label for="cpf">CPF</label>
+                            <input type="number" name="cpf" id="cpf" required placeholder="000.000.000-00">
+                        </div>
+                        <div class="col-2">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required autocomplete="email" placeholder="contato@gmail.com">
+                        </div>
+
+                        <h2 class="col-2">Entrega</h2>
+                        <div>
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" required placeholder="Seu nome">
+                        </div>
+                        <div>
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="sobrenome" required placeholder="Seu sobrenome">
+                        </div>
+                        <div class="col-2">
+                            <label for="cpf">CPF</label>
+                            <input type="number" name="cpf" id="cpf" required placeholder="000.000.000-00">
+                        </div>
+                        <div class="col-2">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required autocomplete="email" placeholder="contato@gmail.com">
+                        </div>
+                        
+                        <button class="botao col-2" type="submit">solicitar orçamento</button>
+                    </form>
+                </section>
+            </div>
+        </article>
+    </main>
+
+
+    <footer class="footer-bg">
+        <div class="footer container">
+            <img src="./img/bikcraft.svg" alt="Bikcraft">
+            <div class="footer-contato">
+                <h3 class="font-2-l-b cor-0">Contato</h3>
+                <ul class="font-2-m cor-5">
+                    <li><a href="tel:+552199999999">+55 21 9999-9999</a></li>
+                    <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+                    <li>Rua Ali Perto, 42 - Botafogo</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul>
+                <ul class="footer-contato-redes">
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./img/redes/instagram-p.svg" alt="Instagram"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank"><img src="./img/redes/facebook-p.svg" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank"><img src="./img/redes/youtube-p.svg" alt="YouTube"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-informacoes">
+                <h3 class="font-2-l-b cor-0">Informações</h3>
+                <nav>
+                    <ul class="font-1-m cor-5">
+                        <li><a href="./bicicletas.html">Bicicletas</a></li>
+                        <li><a href="./seguros.html">Seguros</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                        <li><a href="./termos.html">Termos e Condições</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
