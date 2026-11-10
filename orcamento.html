@@ -41,7 +41,7 @@
 
                 <section aria-label="Formulário" class="orcamento-formulario">
                     <form class="form" action="./contato.html" method="post">
-                        <h2 class="col-2">Dados pessoais</h2>
+                        <h2 class="col-2 font-1-s cor-9">Dados pessoais</h2>
                         <div>
                             <label for="nome">Nome</label>
                             <input type="text" name="nome" id="nome" required placeholder="Seu nome">
@@ -59,7 +59,7 @@
                             <input type="email" name="email" id="email" required autocomplete="email" placeholder="contato@gmail.com">
                         </div>
 
-                        <h2 class="col-2">Entrega</h2>
+                        <h2 class="col-2 font-1-s cor-9">Entrega</h2>
                         <div>
                             <label for="cep">CEP</label>
                             <input type="number" name="cep" id="cep" required>
@@ -81,7 +81,10 @@
                             <input type="text" name="cidade" id="cidade" required>
                         </div>
                         
-                        
+                        <div class="checkbox col-2">
+                            <input type="checkbox" name="termos" id="termos" value="aceito">
+                            <label for="termos">Li e aceito os <span>termos e condições</span>.</label>
+                        </div>
                         <button class="botao col-2" type="submit">solicitar orçamento</button>
                     </form>
                 </section>
