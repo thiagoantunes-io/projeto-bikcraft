@@ -56,6 +56,8 @@
    align-items: center;
 }
 
+
+
 .checkbox input {
     width: 20px;
     height: 20px;
@@ -72,6 +74,8 @@
 .checkbox span {
     text-decoration: underline;
 }
+
+
 
 
 

@@ -18,7 +18,7 @@
     border: none;
 } */
 
-.form input, .form textarea {
+.form input, .form textarea, .form select {
     font: 400 1rem/1.5 "Roboto", sans-serif;
     background-color: var(--cor-1);
     border: 1px solid var(--cor-2);
@@ -44,7 +44,7 @@
     grid-column: 1/-1;
 }
 
-.form ::placeholder {
+.form ::placeholder, .form select:required:invalid {
     color: var(--cor-6);
 }
 
