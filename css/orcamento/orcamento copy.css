@@ -1,0 +1,108 @@
+#orcamento {
+    background-color: var(--cor-1);
+}
+
+/* #orcamento .titulo-bg {
+    box-shadow: inset 0px -300px var(--cor-1);
+} */
+
+.orcamento {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.orcamento-informacoes, .orcamento-formulario {
+    padding: 40px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-informacoes {
+    /* background-color: var(--cor-12); */
+    background-color: antiquewhite;
+    border-radius: 4px 0 0 4px;
+}
+
+
+.orcamento-formulario {
+    background-color: var(--cor-0);
+    border-radius: 0 4px 4px 0;
+    /* border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; */
+}
+
+.orcamento-formulario h2 {
+    padding-top: 32px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+
+.orcamento-formulario h2::before {
+    content: "";
+    background-color: var(--cor-p1);
+    /* display: inline-block; */
+    position: absolute;
+    height: 12px;
+    width: 6px;
+    top: 38px;
+    left: -12px 
+}
+
+.checkbox {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 10px;
+   align-items: center;
+}
+
+
+
+.checkbox input {
+    width: 20px;
+    height: 20px;
+    background-color: var(--cor-1);
+    border: 1px solid var(--cor-2);
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.checkbox label {
+    margin-bottom: 0px;
+}
+
+.checkbox span {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* @media (max-width: 950px) {
+    .contato {
+        grid-template-columns: auto 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .contato {
+        margin-top: 40px;
+        grid-template-columns: 1fr;
+    }
+
+    .contato-informacoes {
+        border-radius: 4px 4px 0 0;
+    } 
+    
+    .contato-formulario {
+        border-radius: 0 0 4px 4px;
+    }
+
+    .contato-informacoes h2 {
+        margin-bottom: 0px;
+    }
+    .contato-redes {
+        padding-top: 0px;
+    }
+} */

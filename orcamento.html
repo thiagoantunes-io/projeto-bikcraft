@@ -31,11 +31,10 @@
     <main>
         <article class="titulo-bg">
             <div class="titulo container">
-                <p class="font-2-l-b cor-5">cotações no seu email</p>
+                <p class="font-2-l-b cor-5">Cotações no seu email</p>
                 <h1 class="font-1-xxl cor-0">solicite um orçamento<span class="cor-p1">.</span></h1>
             </div>
-
-            <div class="orcamento container">
+            <!-- <div class="orcamento container">
                 <section class="orcamento-informacoes">
                 </section>
 
@@ -121,8 +120,116 @@
                         <button class="botao col-2" type="submit">solicitar orçamento</button>
                     </form>
                 </section>
-            </div>
+            </div> -->
         </article>
+
+        <form class="orcamento container" action="./">
+            <div class="orcamento-produto">
+                <h2 class="font-1-xs cor-5">Bikcraft ou Seguro?</h2>
+
+                <div class="grupo-radio">
+                    <div class="radio">
+                        <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
+                        <label for="bikcraft">Bikcraft</label>
+                    </div>
+                    
+                    <div class="radio">
+                        <input type="radio" name="tipo" value="seguro" id="seguro">
+                        <label for="seguro">Seguro</label>
+                    </div>
+                </div>
+
+                <div class="orcamento-conteudo" id="orcamento-bikcraft">
+                    <h2 class="font-1-xs cor-5">Escolha a sua (BIKCRAFT):</h2>
+                </div>
+
+                <div class="orcamento-conteudo" id="orcamento-seguro">
+                    <h2 class="font-1-xs cor-5">Escolha o plano:</h2>
+                </div>
+            </div>
+
+            <div class="orcamento-dados form">
+                <h2 class="col-2 font-1-xs cor-9">Dados pessoais</h2>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Seu nome">
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required placeholder="Seu sobrenome">
+                </div>
+                <div class="col-2">
+                    <label for="cpf">CPF</label>
+                    <input type="number" name="cpf" id="cpf" required placeholder="000.000.000-00">
+                </div>
+                <div class="col-2">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required autocomplete="email" placeholder="contato@gmail.com">
+                </div>
+
+                <h2 class="col-2 font-1-xs cor-9">Entrega</h2>
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="number" name="cep" id="cep" required>
+                </div>
+                <div>
+                    <label for="numero">Número</label>
+                    <input type="number" name="numero" id="numero" required>
+                </div>
+                <div>
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" name="logradouro" id="logradouro" required placeholder="Rua, avenida...">
+                </div>
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairoo" id="bairro" required>
+                </div>
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade" required>
+                </div>
+                <div>
+                    <label for="estado">Estado</label>
+                    <select name="estado" id="estado" required>
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="AC">Acre (AC)</option>
+                        <option value="AL">Alagoas (AL)</option>
+                        <option value="AP">Amapá (AP)</option>
+                        <option value="AM">Amazonas (AM)</option>
+                        <option value="BA">Bahia (BA)</option>
+                        <option value="CE">Ceará (CE)</option>
+                        <option value="DF">Distrito Federal (DF)</option>
+                        <option value="ES">Espírito Santo (ES)</option>
+                        <option value="GO">Goiás (GO)</option>
+                        <option value="MA">Maranhão (MA)</option>
+                        <option value="MT"> Mato Grosso (MT)</option>
+                        <option value="MS">Mato Grosso do Sul (MS)</option>
+                        <option value="MG">Minas Gerais (MG)</option>
+                        <option value="PA">Pará (PA)</option>
+                        <option value="PB">Paraíba (PB)</option>
+                        <option value="PR">Paraná (PR)</option>
+                        <option value="PE">Pernambuco (PE)</option>
+                        <option value="PI">Piauí (PI)</option>
+                        <option value="RJ">Rio de Janeiro (RJ)</option>
+                        <option value="RN">Rio Grande do Norte (RN)</option>
+                        <option value="RS">Rio Grande do Sul (RS)</option>
+                        <option value="RO">Rondônia (RO)</option>
+                        <option value="RR">Roraima (RR)</option>
+                        <option value="SC">Santa Catarina (SC)</option>
+                        <option value="SP">São Paulo (SP)</option>
+                        <option value="SE">Sergipe (SE)</option>
+                        <option value="TO">Tocantins (TO)</option>
+                    </select>
+                </div>
+                
+                <div class="checkbox col-2">
+                    <input type="checkbox" name="termos" id="termos" value="aceito">
+                    <label for="termos">Li e aceito os <span>termos e condições</span>.</label>
+                </div>
+                <button class="botao col-2" type="submit">solicitar orçamento</button>
+
+            </div>
+        </form>
     </main>
 
 
