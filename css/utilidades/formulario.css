@@ -5,7 +5,7 @@
 }
 
 .form label {
-    font: 600 1rem/1.5 "Poppins", sans-serif;
+    font: 500 1rem/1.5 "Poppins", sans-serif;
     display: block;
     margin-bottom: 4px;
 }
@@ -46,6 +46,31 @@
 
 .form ::placeholder, .form select:required:invalid {
     color: var(--cor-6);
+}
+
+
+.form .checkbox {
+   display: grid;
+   grid-template-columns: auto 1fr;
+   gap: 10px;
+   align-items: center;
+}
+
+.form .checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.form input[type="checkbox"]:checked {
+  accent-color: var(--cor-p1);
+}
+
+.form .checkbox label {
+    margin-bottom: 0px;
+}
+
+.form .checkbox a {
+    text-decoration: underline;
 }
 
 @media (max-width: 800px) {
