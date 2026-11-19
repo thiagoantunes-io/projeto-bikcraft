@@ -95,7 +95,7 @@
 
 .orcamento-produto input:focus + label {
     box-shadow: 0 0 0 2px var(--cor-p1);
-    border-color: var(--cor-12);
+    border-color: var(--cor-11);
 }
 
 .orcamento-produto input {
@@ -152,12 +152,9 @@
     margin-bottom: 8px;
 }
 
-
-
 .orcamento-detalhes li img {
     width: 16px;
 }
-
 
 .orcamento-produto input:checked + label + .orcamento-detalhes {
     display: grid;
