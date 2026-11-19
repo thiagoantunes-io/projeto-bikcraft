@@ -99,6 +99,10 @@
     border-radius: 0 4px 4px 0;
 }
 
+.orcamento-conteudo h2, .orcamento-dados h2:nth-of-type(n+2){
+    margin-top: 20px;
+}
+
 
 
 .orcamento-conteudo {
@@ -119,27 +123,6 @@
 input[type="radio"]:checked {
   accent-color: var(--cor-p1);
 }
-
-.orcamento-dados h2 ~ h2 {
-    padding-top: 40px;
-}
-
-/* 
-.grupo-radio {
-    display: flex;
-    gap: 16px;
-    flex-wrap: nowrap;
-} */
-
-/* .radio {
-    font: 400 1rem/1.5 "Roboto", sans-serif;
-    background-color: var(--cor-10);
-    border: 1px solid var(--cor-11);
-    padding: 12px;
-    border-radius: 4px;
-    width: 100%;
-    margin-top: 16px;
-} */
 
 .checkbox {
    display: grid;
