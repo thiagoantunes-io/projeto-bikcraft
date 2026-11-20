@@ -1,7 +1,7 @@
 .depoimento {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: var(--cor-p1);
+    background: var(--cor-p1);
     overflow: hidden;
 }
 
@@ -12,10 +12,26 @@
     object-fit: cover;
 }
 
+.depoimento-imagem {
+    position: relative;
+}
+
+.depoimento-imagem::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/dec/top-left-p.svg");
+    background-repeat: no-repeat;
+    width: 60px;
+    aspect-ratio: 1/1;
+    top: 40px;
+    right: -90px;
+}
+
 .depoimento-conteudo {
     /* align-content: end; */
     align-self: end;
     padding: 40px 40px 80px 80px;
+    background: url("../../img/dec/bottom-right-p.svg") no-repeat bottom 40px right 40px;
 }
 
 .depoimento-conteudo p {
@@ -42,6 +58,18 @@
 .depoimento p::after {
     content: "”";
     
+}
+
+@media (min-width: 1200px) {
+    .depoimento img {
+        max-height: 520px;
+    }
+}
+
+@media (max-width: 1103px) {
+    .depoimento-imagem::after {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
