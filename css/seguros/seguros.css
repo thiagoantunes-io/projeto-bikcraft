@@ -1,5 +1,5 @@
 .seguros-bg {
-    background-color: var(--cor-11);
+    background: var(--cor-11) url("../../img/dec/bottom-left.svg") no-repeat bottom 40px left 40px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -18,7 +18,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .seguros-item {
@@ -71,10 +71,13 @@
 
 
 @media (max-width: 800px) {
+    .seguros-bg {
+        background: var(--cor-11);
+    }
 
     .seguros-conteudo {
         grid-template-columns: 1fr;
-        /* align-items: start; */  
+        /* align-items: start;   */
     }
 
     .seguros-item {
