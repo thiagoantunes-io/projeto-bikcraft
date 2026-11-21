@@ -3,6 +3,7 @@
 }
 
 #contato .titulo-bg {
+    background: var(--cor-11) url("../../img/dec/top-right.svg") no-repeat top 60px right 40px;
     box-shadow: inset 0px -300px var(--cor-1);
 }
 
@@ -86,7 +87,7 @@
 }
 
 .contato-formulario {
-    background-color: var(--cor-0);
+    background: var(--cor-0) url("../../img/dec/bottom-right.svg") no-repeat bottom 40px right 40px;
     border-radius: 0 4px 4px 0;
     /* border-top-right-radius: 4px;
     border-bottom-right-radius: 4px; */
@@ -95,6 +96,15 @@
 @media (max-width: 950px) {
     .contato {
         grid-template-columns: auto 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    #contato .titulo-bg {
+        background: var(--cor-11);
+    }
+    .contato-formulario {
+        background: var(--cor-0)
     }
 }
 

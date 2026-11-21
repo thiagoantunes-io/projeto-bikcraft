@@ -1,4 +1,5 @@
 .seguros-interno-bg {
+    background: url("../../img/dec/bottom-right.svg") no-repeat bottom 160px right 40px, url("../../img/dec/top-right.svg") no-repeat top 160px right 40px;
     background-color: var(--cor-11);
     box-shadow: inset 0px 120px var(--cor-0), inset 0px -120px var(--cor-12);
 }
@@ -34,11 +35,12 @@
 
 @media (max-width: 800px) {
     .seguros-interno-bg {
+        background: var(--cor-11);
         box-shadow: inset 0px -60px var(--cor-12);
     }
 
     .seguro {
-            grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     .seguros-imagem {

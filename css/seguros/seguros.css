@@ -1,3 +1,7 @@
+#seguros .titulo-bg {
+    background: var(--cor-11) url("../../img/dec/top-right.svg") no-repeat top 60px right 40px;
+}
+
 .seguros-bg {
     background: var(--cor-11) url("../../img/dec/bottom-left.svg") no-repeat bottom 40px left 40px;
     padding-top: 60px;
@@ -71,7 +75,7 @@
 
 
 @media (max-width: 800px) {
-    .seguros-bg {
+    .seguros-bg, #seguros .titulo-bg {
         background: var(--cor-11);
     }
 
