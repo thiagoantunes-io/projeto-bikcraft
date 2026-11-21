@@ -19,7 +19,7 @@
 }
 
 .contato-informacoes {
-    background-color: var(--cor-12);
+    background: var(--cor-12) url("../../img/dec/bottom-left.svg") no-repeat bottom 40px left 40px;
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 32px 8px;
@@ -105,6 +105,9 @@
     }
     .contato-formulario {
         background: var(--cor-0)
+    }
+    .contato-informacoes {
+        background: var(--cor-12)
     }
 }
 
