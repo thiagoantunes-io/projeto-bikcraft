@@ -84,6 +84,9 @@
 
 
 @media (max-width: 800px) {
+    .seguros-bg {
+        background: var(--cor-11);
+    }
     .seguros-conteudo {
         grid-template-columns: 1fr;
         /* align-items: start;   */
