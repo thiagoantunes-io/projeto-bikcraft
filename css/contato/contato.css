@@ -2,8 +2,12 @@
     background-color: var(--cor-1);
 }
 
+#contato .lojas .titulo {
+    background: none;
+}
+
 #contato .titulo-bg {
-    background: var(--cor-11) url("../../img/dec/top-right.svg") no-repeat top 60px right 40px;
+    background: var(--cor-11);
     box-shadow: inset 0px -300px var(--cor-1);
 }
 
@@ -100,9 +104,6 @@
 }
 
 @media (max-width: 800px) {
-    #contato .titulo-bg {
-        background: var(--cor-11);
-    }
     .contato-formulario {
         background: var(--cor-0)
     }

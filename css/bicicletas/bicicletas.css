@@ -1,3 +1,7 @@
+#bicicletas .titulo {
+    background: none;
+}
+
 .bicicleta-bg {
    background: linear-gradient(to right, var(--cor-0) 20%, var(--cor-11) 0%);
     /* background-image: linear-gradient(to right, var(--cor-0) 30%, var(--cor-12) 30%); */
@@ -86,7 +90,7 @@
 
 @media (max-width: 800px) {
     .bicicleta-bg {
-    background: var(--cor-11);
+        background: var(--cor-11);
     }
 
     .bicicleta {

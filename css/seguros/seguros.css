@@ -1,7 +1,3 @@
-#seguros .titulo-bg {
-    background: var(--cor-11) url("../../img/dec/top-right.svg") no-repeat top 60px right 40px;
-}
-
 .seguros-bg {
     background: var(--cor-11) url("../../img/dec/bottom-left.svg") no-repeat bottom 40px left 40px;
     padding-top: 60px;
@@ -10,6 +6,7 @@
 
 #seguros .seguros-bg {
     /* ou seja, quando estiver dentro de id seguros, irei aplicar a declaração  padding-top: 0px; na classe .seguros-bg*/
+    background: var(--cor-11);
     padding-top: 0px;
 }
 
@@ -23,6 +20,18 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
+    position: relative;
+}
+
+#seguros .seguros-conteudo::before {
+    content: "";
+    background: url("../../img/dec/bottom-left.svg") no-repeat;
+
+    position: absolute;
+    width: 60px;
+    aspect-ratio: 1/1;
+    bottom: -40px;
+    left: 40px;
 }
 
 .seguros-item {
@@ -75,13 +84,12 @@
 
 
 @media (max-width: 800px) {
-    .seguros-bg, #seguros .titulo-bg {
-        background: var(--cor-11);
-    }
-
     .seguros-conteudo {
         grid-template-columns: 1fr;
         /* align-items: start;   */
+    }
+    .seguros-conteudo::before {
+        display: none;
     }
 
     .seguros-item {
